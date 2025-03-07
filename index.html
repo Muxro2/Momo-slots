@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Momo Slots</title>
+  <link href="style.css" screen="media" rel="stylesheet"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header" class="light">
+    <h1>MOMO•SLOTS</h1>
+    <div class="spacer dark"> </div>
+  </div>
+  <div id="slot-container">
+    <div class="win-popup">+$<span>100</span></div>
+    <div id="slot-machine">
+        <div class="reel">
+        <div class="symbol">🐉</div>
+        <div class="symbol">⚡️</div>
+        <div class="symbol">🍾</div>
+        </div>
+        <div class="reel">
+        <div class="symbol">🐉</div>
+        <div class="symbol">⚡️</div>
+        <div class="symbol">🍾</div>
+        </div>
+        <div class="reel">
+        <div class="symbol">🐉</div>
+        <div class="symbol">⚡️</div>
+        <div class="symbol">🍾</div>
+        </div>
+    </div>
+    <div class="lose-popup">-$<span>100</span></div>
+  </div>
+
+  <div id="rotateX">
+    <div id="interface" class="light">
+      <div id="bet-container">
+        <button class="change-bet-button subtract">-100</button>
+        <div id="bet-amount">500</div>
+        <button class="change-bet-button add">+100</button>
+      </div>
+      <div id="balance-container">
+        <div id="rules-container"></div>
+        <button id="spin-button">SPIN</button>
+        <div id="wallet">
+           <div id="wallet-amount">$<span id="wallet-number">1000</span></div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+
+</body>
+
+</html>

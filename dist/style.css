@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url(assets/background.jpeg);
+  background-size: cover;
+  color: #fff;
+  font-family: 'Impact', sans-serif;
+  overflow: hidden;
+}
+
+
+#header {
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+.spacer {
+  display: block;
+  padding: 1px;
+  height: 25px;
+  width: 100%;
+}
+
+
+.light {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.win-popup, .lose-popup{
+  position: absolute;
+  margin-left: 42%;
+  font-size: 2em;
+  text-align: center;
+  z-index: 100;
+  text-shadow: 0 0 5px #000;
+  opacity: 0;
+}
+.win-popup {
+  margin-top: -3%;
+  color: #d9ff00
+}
+.lose-popup {
+  margin-top: -7%;
+  color: #ff3b3b;
+}
+
+#slot-machine {
+  padding: 0;
+  margin: 10px auto;
+  width: 300px;
+  height: 300px;
+  border: 5px double #656565;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #787878;
+
+  filter: saturate(0.9);
+
+}
+
+.symbol {
+  font-size: 3em;
+  padding: 10px 23px;
+}
+
+.reel {
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background: linear-gradient(rgb(228, 228, 228),rgb(255,255,255),rgb(228, 228, 228))
+  
+}
+
+#rotateX{
+  margin: 0px -20px;
+  perspective: 800px;
+  perspective-origin: top;
+  display: flex;
+  justify-content: center;
+}
+
+#interface {
+  padding: 10px;
+  width: 100%;
+  height: 150px;
+
+  transform-style: preserve-3d;
+  transform: rotateX(30deg);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#bet-container, #balance-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#bet-amount {
+  padding: 2px;
+  height: 30px;
+  width: 50%;
+  background-image: url(assets/display.jpeg);
+  background-size: cover;
+  border-radius: 10px;
+
+  color: red;
+  font-family: 'Doto', sans-serif;
+  text-align: center;
+  
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+button {
+  padding: 0;
+
+  color: #fff;
+  font-family: 'Impact', sans-serif;
+  text-align: center;
+}
+
+.change-bet-button {
+  height: 40px;
+  width: 15%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px rgb(150, 0, 0);
+  
+  background-image: url(assets/changeBet.jpeg);
+  background-size: cover;
+
+  font-size: 1.1em;
+}
+
+#rules-container {
+  margin-left: -30px;
+  height: 120%;
+  width: 100px;
+  background-image: url(assets/rules.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#spin-button {
+  height: 45px;
+  width: 30%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 7px rgb(150, 0, 0);
+  
+  background-image: url(assets/changeBet.jpeg);
+  background-size: cover;
+  background-color: #fff;
+
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.spin-button:active,
+.change-bet-button:active {
+  transform: translateY(5px);
+  box-shadow: none;
+  background-color: #fff;
+}
+
+#wallet {
+  height: 100%;
+  width: 15%;
+  background-image: url(assets/wallet.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#wallet-amount {
+  padding: 6% 20%
+}
